@@ -73,9 +73,13 @@ while i == 2:
                                 temp = datetime.datetime.strptime(pdate, '%m/%d/%Y')
                                 new_date_temp = temp + datetime.timedelta(hv)
                                 harvest = new_date_temp.strftime('%m/%d/%Y')
-                                print("\n This is your germination range is <3 ", "from", germ_end, "To", germ_start, end=('\n'))
+                                print("\n This is your germination range is <3 ", "from", germ_start, "To", germ_end, end=('\n'))
                                 print("\n Your transplanting range is from <3 ", trans_start, "To ", trans_end)
                                 print("\n THIS PLANTS FEED THE FAMILY DAY IS <3 ", harvest, end=('\n'))
+                                spc = rows[1]
+                                print("\nThis seed baby needs this much arm space: ", spc, "inches", end=("\n"))
+                                dep = rows[2]
+                                print("\nThis seed baby needs this much covers", dep, "inches\n")
                 sql_table(con)
 #pdate = int(input("Please enter little seed babys birthday mm/dd/yyy: "))
 #temp = datetime.datetime.strptime(pdate, '%m/%d/%Y')
